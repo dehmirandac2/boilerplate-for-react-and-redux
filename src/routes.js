@@ -6,7 +6,7 @@ import {
 import { HelloWorld } from './views/HelloWorld';
 
 import baseHistory from './history';
-//import './styles/style.styl';
+import './styles/style.styl';
 
 export default props => (
   <Router history={history}>

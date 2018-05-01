@@ -27,3 +27,5 @@ npm install
 - [Redux](http://redux.js.org/docs/introduction/)
 - [Babel 6](https://babeljs.io/) - Javascript Compiler.
 - [Webpack](https://webpack.github.io/) - Javascript module bundler.
+- [Webpack Dashboard](https://github.com/FormidableLabs/webpack-dashboard) - A CLI dashboard for your webpack dev server
+- [Stylus](http://stylus-lang.com/) - Preprocessor CSS
