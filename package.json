@@ -1,0 +1,35 @@
+{
+  "name": "boilerplate-react",
+  "version": "1.0.0",
+  "description": "Boilerplate for React and Redux project",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --progress --color --inline --hot",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "Deborah Miranda",
+  "license": "ISC",
+  "dependencies": {
+    "react": "16.3.2",
+    "react-dom": "16.3.2",
+    "react-redux": "5.0.7",
+    "react-router": "3.0.5",
+    "react-router-dom": "4.2.2",
+    "react-router-redux": "4.0.8",
+    "redux": "4.0.0",
+    "redux-promise-middleware": "5.1.1",
+    "redux-thunk": "2.2.0"
+  },
+  "devDependencies": {
+    "babel-core": "6.4.5",
+    "babel-loader": "7.1.2",
+    "babel-preset-react": "6.3.13",
+    "html-webpack-plugin": "3.2.0",
+    "react-hot-loader": "4.1.2",
+    "webpack": "3.5.5",
+    "webpack-dev-server": "2.7.1"
+  }
+}
