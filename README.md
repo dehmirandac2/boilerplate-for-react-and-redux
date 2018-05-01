@@ -1,12 +1,24 @@
 # boilerplate-for-react-and-redux
 
+## Pré-requisitos
+- Node >= 6.11.2
+- NPM >= 5.6.0
+- Yarn >= 1.6.0
 
 ## Instalação
 
+```bash
+yarn 
+```
+ou 
+
+```bash
+npm install
+```
 
 ## Comandos
 
-* **npm start**: levanta o servidor de desenvolvimento em [http://localhost:8000](http://localhost:8000)
+* **yarn start**: levanta o servidor de desenvolvimento em [http://localhost:8000](http://localhost:8000)
 
 ## Stack
 
