@@ -3,7 +3,7 @@ import {
   BrowserRouter as Router,
   Route
 } from 'react-router-dom';
-import { HelloWorld } from './views/HelloWorld';
+import { HelloWorld } from './views/hello-world';
 
 import baseHistory from './history';
 import './styles/style.styl';

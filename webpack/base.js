@@ -32,7 +32,7 @@ module.exports = {
             presets: ['react'],
         },
       },
-
+      
       {
         test: /\.styl$/,
         loader: ExtractTextPlugin.extract({
@@ -76,6 +76,10 @@ module.exports = {
       //disable: !isProd(),
       filename: 'css/[name]_[contenthash].css',
       allChunks: true,
+    }),
+
+    new webpack.ProvidePlugin({
+      "React": "react",
     }),
 
     //separate this two plugins to dev webpack config
