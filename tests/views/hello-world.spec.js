@@ -1,6 +1,6 @@
 import React from 'react';
-import { HelloWorld } from '../../src/views/hello-world';
 import { shallow } from 'enzyme';
+import { HelloWorld } from '../../src/views/hello-world';
 
 describe('HelloWorld component', () => {
   let wrapper;
@@ -12,5 +12,5 @@ describe('HelloWorld component', () => {
   it('should render the view component', () => {
     expect(wrapper.find('h1').text()).toBe('Hello World!');
   });
-  
+
 });

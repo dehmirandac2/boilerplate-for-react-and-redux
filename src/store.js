@@ -11,4 +11,4 @@ export default function configureStore(initialState) {
   const middlewares = compose(applyMiddleware(...middlewaresList), devTools);
 
   return createStore(reducers, state, middlewares);
-};
+}

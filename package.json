@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node -r babel-register ./node_modules/.bin/webpack-dev-server --config ./webpack/base.js --watch --colors",
-    "test": "NODE_ENV=test jest"
+    "test": "NODE_ENV=test jest",
+    "lint": "./node_modules/.bin/eslint src",
+    "lint:fix": "npm run lint -- --fix"
   },
   "keywords": [
     "react"
@@ -40,8 +42,13 @@
     "css-loader": "0.28.11",
     "enzyme": "3.3.0",
     "enzyme-adapter-react-16": "1.1.1",
-    "extract-text-webpack-plugin": "3.0.2",
     "enzyme-to-json": "3.3.4",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.8.2",
+    "extract-text-webpack-plugin": "3.0.2",
     "html-webpack-plugin": "3.2.0",
     "identity-obj-proxy": "3.0.0",
     "jest": "22.4.4",
