@@ -13,5 +13,5 @@ ReactDOM.render(
       <Routes />
     </Provider>
   </AppContainer>,
-  document.getElementById('main'),
+  document.getElementById('main')
 );

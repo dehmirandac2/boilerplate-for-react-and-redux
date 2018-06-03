@@ -8,7 +8,10 @@ export default function configureStore(initialState) {
   const state = Object.assign({}, window.__INITIAL_STATE__, initialState);
   const middlewaresList = [thunkMiddleware, routerMiddleware(history), promiseMiddleware()];
   const devTools = window.devToolsExtension ? window.devToolsExtension() : f => f;
-  const middlewares = compose(applyMiddleware(...middlewaresList), devTools);
+  const middlewares = compose(
+    applyMiddleware(...middlewaresList),
+    devTools
+  );
 
   return createStore(reducers, state, middlewares);
 }

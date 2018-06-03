@@ -1,45 +1,72 @@
 {
-    "extends": "airbnb",
-    "env": {
-      "es6": true,
-      "browser": true
-    },
+  "extends": [
+    "eslint:recommended",
+    "airbnb"
+  ],
+  "plugins": [
+    "react",
+    "prettier",
+    "import"
+  ],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module",
     "ecmaFeatures": {
-      "modules": true,
-      "experimentalObjectRestSpread": true
-    },
-    "settings": {
-      "react": {
-        "pragma": "React",
-        "version": "15.0"
-      }
-    },
-    "rules": {
-      "indent": [
-        "error",
-        2,
-        {
-          "SwitchCase": 1
-        }
-      ],
-      "id-length": 0,
-      "react/jsx-indent": [
-        2,
-        2
-      ],
-      "react/jsx-first-prop-new-line": 0,
-      "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
-      "react/jsx-indent-props": [
-        2,
-        2
-      ],
-      "max-len": [
-        "error",
-        120
-      ],
-      "consistent-return": 0,
-      "no-param-reassign": 0,
-      "import/no-unresolved": 0,
-      "import/extensions": ["off", "never"]
+      "jsx": true
     }
+  },
+  "env": {
+    "node": true,
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "jest": true
+  },
+  "globals": {
+    "beforeAll": true,
+    "expect": true
+  },
+  "rules": {
+    "no-debugger": "off",
+    "no-useless-escape": "off",
+    "no-case-declarations": "warn",
+    "require-jsdoc": "off",
+    "no-console": "off",
+    "no-underscore-dangle": 0,
+    "max-len": "off",
+    "new-cap": "off",
+    "quote-props": ["error", "as-needed"],
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error",
+    "jsx-quotes": ["error", "prefer-double"],
+    "react/self-closing-comp": "error",
+    "react/jsx-no-duplicate-props": "error",
+    "comma-dangle": "off",
+    "space-after-keywords": "off",
+    "semi": "off",
+    "object-curly-spacing": "off",
+    "arrow-parens": ["error", "as-needed"],
+    "import/first": ["error"],
+    "import/newline-after-import": ["error"],
+    "import/order": ["error", {"groups": ["builtin", "external"]}],
+    "prettier/prettier": ["error", {"trailingComma": "es5", "singleQuote": true, "printWidth": 120}],
+    "keyword-spacing": ["error", {
+      "before": true,
+      "after": true
+    }],
+    "no-multiple-empty-lines": ["error", {
+      "max": 1,
+      "maxBOF": 1,
+      "maxEOF": 1
+    }],
+    "prefer-template": "error",
+    "react/no-array-index-key": "error",
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "prefer-destructuring": ["error", {
+      "array": true,
+      "object": true
+    }, {
+      "enforceForRenamedProperties": false
+    }]
   }
+}
